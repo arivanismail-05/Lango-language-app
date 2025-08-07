@@ -1,0 +1,587 @@
+<h1 class="text-center my-5 fw-bold"></h1>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Language Learning Platform</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img
+            src="img/logo/logo.png"
+            alt="Lango"
+            class="rounded-circle me-2"
+            width="40"
+            height="40"
+          />
+          <span>Lango</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+        >
+          <i class="bi bi-grid"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <div class="ms-auto nav-buttons d-flex align-items-center">
+            <div class="dropdown">
+              <button
+                class="btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+              >
+                <i class="bi bi-translate"></i>
+                <span>Language</span>
+              </button>
+              <div class="dropdown-menu">
+                <div class="language-grid">
+                  <a href="#" class="language-item">
+                    <img src="img/flags/american.png" alt="English" />
+                    <span>English</span>
+                  </a>
+                  <a href="#" class="language-item">
+                    <img src="img/flags/spain.png" alt="Spanish" />
+                    <span>Spanish</span>
+                  </a>
+                  <a href="#" class="language-item">
+                    <img src="img/flags/france.png" alt="French" />
+                    <span>French</span>
+                  </a>
+                  <a href="#" class="language-item">
+                    <img src="img/flags/german.png" alt="German" />
+                    <span>German</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a href="includes/choose.html" class="btn-secondary justify-content-center">
+              <i class="bi bi-box-arrow-in-right"></i>
+              <span class="">Login</span>
+            </a>
+            <a href="includes/choose.html" class="btn-primary justify-content-center">
+              <i class="bi bi-rocket-takeoff"></i>
+              <span>Start</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6 order-2 order-lg-1 text-center">
+              <h1 class="hero-title">Every new language unlocks a new life</h1>
+              <p class="hero-text">
+                Expert-designed micro-lessons + a global community cheering your
+                progress
+              </p>
+
+              <div class="d-flex flex-wrap gap-3 mb-4 justify-content-center">
+                <a href="includes/choose.html" class="btn-primary justify-content-center p-4 fs-6">
+                  <i class="bi bi-rocket-takeoff me-2 fs-5"></i>
+                  Start Learning Now
+                </a>
+                <a href="#" class="btn-secondary justify-content-center p-4 fs-6">
+                  <i class="bi bi-play-circle me-2 fs-5"></i>
+                  Watch Demo
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-6 order-1 order-lg-2">
+              <div class="feature-card">
+                <script
+                  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                  type="module"
+                ></script>
+                <dotlottie-player
+                  src="https://lottie.host/75e15048-2487-44ff-966d-04648503773e/4lmbbpqk0r.lottie"
+                  background="transparent"
+                  speed="1"
+                  style="width: 100%; height: 360px"
+                  loop
+                  autoplay
+                >
+                </dotlottie-player>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="second-section my-5 container">
+        <div>
+          <h1 class="text-center my-5 fw-bolder">
+            <i class="bi bi-translate"></i>
+            I Want to Learn .....
+          </h1>
+        </div>
+        <div class="">
+          <div
+            id="flag"
+            class="carousel slide justify-content-center align-items-center"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active justify-content-center">
+                <div class="row g-2">
+                  <div class="col-6 col-sm-3">
+                    <a
+                      href="includes/choose.html"
+                      class="d-flex flex-column align-items-center flag-card py-2 text-decoration-none text-light"
+                    >
+                      <img
+                        src="img/flag-circle/spain.png"
+                        alt="Spanish"
+                        width="60"
+                      />
+                      <span>Spanish</span>
+                      <span class="span"></span>
+                    </a>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                    <a
+                      href="#"
+                      class="d-flex flex-column align-items-center flag-card py-2 text-decoration-none text-light"
+                    >
+                      <img
+                        src="img/flag-circle/japan.png"
+                        alt="Japanese"
+                        width="60"
+                      />
+                      <span>Japanese</span>
+                      <span class="span"></span>
+                    </a>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                    <a
+                      href="#"
+                      class="d-flex flex-column align-items-center flag-card py-2 text-decoration-none text-light"
+                    >
+                      <img
+                        src="img/flag-circle/united-states.png"
+                        alt="English"
+                        width="60"
+                      />
+                      <span>English</span>
+                      <span class="span"></span>
+                    </a>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                    <a
+                      href="#"
+                      class="d-flex flex-column align-items-center flag-card py-2 text-decoration-none text-light"
+                    >
+                      <img
+                        src="img/flag-circle/france.png"
+                        alt="French"
+                        width="60"
+                      />
+                      <span>French</span>
+                      <span class="span"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item justify-content-center">
+                <div class="row g-2">
+                  <div class="col-6 col-sm-3">
+                    <a
+                      href="#"
+                      class="d-flex flex-column align-items-center flag-card py-2 text-decoration-none text-light"
+                    >
+                      <img
+                        src="img/flag-circle/german.png"
+                        alt="German"
+                        width="60"
+                      />
+                      <span>German</span>
+                      <span class="span"></span>
+                    </a>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                    <a
+                      href="#"
+                      class="d-flex flex-column align-items-center flag-card py-2 text-decoration-none text-light"
+                    >
+                      <img
+                        src="img/flag-circle/italy.png"
+                        alt="Italian"
+                        width="60"
+                      />
+                      <span>Italian</span>
+                      <span class="span"></span>
+                    </a>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                    <a
+                      href="#"
+                      class="d-flex flex-column align-items-center flag-card py-2 text-decoration-none text-light"
+                    >
+                      <img
+                        src="img/flag-circle/korean.png"
+                        alt="Korean"
+                        width="60"
+                      />
+                      <span>Korean</span>
+                      <span class="span"></span>
+                    </a>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                    <a
+                      href="#"
+                      class="d-flex flex-column align-items-center flag-card py-2 text-decoration-none text-light"
+                    >
+                      <img
+                        src="img/flag-circle/dutch.png"
+                        alt="Dutch"
+                        width="60"
+                      />
+                      <span>Dutch</span>
+                      <span class="span"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item justify-content-center">
+                <div class="row g-2">
+                  <div class="col-6 col-sm-3">
+                    <a
+                      href="#"
+                      class="d-flex flex-column align-items-center flag-card py-2 text-decoration-none text-light"
+                    >
+                      <img
+                        src="img/flag-circle/russia.png"
+                        alt="Russian"
+                        width="60"
+                      />
+                      <span>Russian</span>
+                      <span class="span"></span>
+                    </a>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                    <a
+                      href="#"
+                      class="d-flex flex-column align-items-center flag-card py-2 text-decoration-none text-light"
+                    >
+                      <img
+                        src="img/flag-circle/china.png"
+                        alt="Chinese"
+                        width="60"
+                      />
+                      <span>Chinese</span>
+                      <span class="span"></span>
+                    </a>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                    <a
+                      href="#"
+                      class="d-flex flex-column align-items-center flag-card py-2 text-decoration-none text-light"
+                    >
+                      <img
+                        src="img/flag-circle/portugal.png"
+                        alt="Portuguese"
+                        width="60"
+                      />
+                      <span>Portuguese</span>
+                      <span class="span"></span>
+                    </a>
+                  </div>
+                  <div class="col-6 col-sm-3">
+                    <a
+                      href="#"
+                      class="d-flex flex-column align-items-center flag-card py-2 text-decoration-none text-light"
+                    >
+                      <img
+                        src="img/flag-circle/arabic.png"
+                        alt="Arabic"
+                        width="60"
+                      />
+                      <span>Arabic</span>
+                      <span class="span"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#flag"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#flag"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero-section d-flex flex-column align-items-center">
+        <div
+          class="container d-flex justify-content-center align-items-center my-5"
+        >
+          <div class="row align-items-center justify-content-center">
+            <div
+              class="col-lg-6 order-2 order-lg-2 text-center text-lg-start justify-content-center"
+            >
+              <h2 class="fw-bolder">Unlock the World with Every Word</h2>
+              <p class="hero-text">
+                Start speaking confidently from your very first lesson! Our
+                proven method gets you ready for real conversations, fast.
+              </p>
+            </div>
+
+            <div
+              class="col-lg-6 order-1 order-lg-1 d-flex justify-content-center"
+            >
+              <script
+                src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                type="module"
+              ></script>
+              <dotlottie-player
+                src="https://lottie.host/e5bcec54-8663-431d-a482-70b7288e18b1/vwrL1VQzNV.lottie"
+                background="transparent"
+                speed="1"
+                style="width: 300px; height: 300px"
+                loop
+                autoplay
+              ></dotlottie-player>
+            </div>
+          </div>
+        </div>
+
+         <div
+          class="container d-flex justify-content-center align-items-center my-5"
+        >
+          <div class="row align-items-center justify-content-center">
+            <div
+              class="col-lg-6 order-2 order-lg-2 text-center text-lg-start justify-content-center"
+            >
+              <h2 class="fw-bolder">Learn Any Language, Anywhere</h2>
+              <p class="hero-text">
+                Why stop at one? Dive into over 12 languages and open doors to
+                new cultures, opportunities, and connections.
+              </p>
+            </div>
+
+            <div
+              class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center"
+            >
+            <script
+            src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+            type="module"
+          ></script>
+          <dotlottie-player
+            src="https://lottie.host/b3b7727b-2fb4-4f64-8959-2417a9abe6b1/s565SL7zHC.lottie"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 300px"
+            loop
+            autoplay
+          ></dotlottie-player>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="container d-flex justify-content-center align-items-center my-5"
+        >
+          <div class="row align-items-center g-4 justify-content-center">
+            <div class="col-lg-6 text-center order-2 order-lg-2 text-center text-lg-start">
+              <h2 class="fw-bolder">Master All Language Skills</h2>
+              <p class="hero-text ">
+                Read, write, listen, and speak like a pro with interactive
+                lessons designed to keep you motivated and excited.
+              </p>
+            </div>
+
+            <div
+              class="col-lg-6 order-1 order-lg-1 d-flex justify-content-center"
+            >
+            <dotlottie-player
+            src="https://lottie.host/25010a7c-f111-45d6-a7db-735f0af45af2/W8VYtEre3d.lottie"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 300px"
+            loop
+            autoplay
+          ></dotlottie-player>
+
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="container d-flex justify-content-center align-items-center my-5"
+        >
+          <div class="row align-items-center g-4 justify-content-center">
+            <div
+              class="col-lg-6 order-2 order-lg-1 text-center text-lg-start justify-content-center"
+            >
+              <h2 class="fw-bolder">Learn Like Magic, Powered by AI</h2>
+              <p class="hero-text ">
+                Our cutting-edge AI adapts to your progress, making learning
+                faster, easier, and more fun—just for you!
+              </p>
+            </div>
+
+            <div
+              class="col-lg-6 order-1 order-lg-2 d-flex justify-content-center"
+            >
+              <script
+                src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+                type="module"
+              ></script>
+              <dotlottie-player
+                src="https://lottie.host/f3e616dc-e382-4c78-93e0-7858f0845463/tdVtQoKDjJ.lottie"
+                background="transparent"
+                speed="1"
+                style="width: 300px; height: 300px"
+                loop
+                autoplay
+              ></dotlottie-player>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section  class="shape-app position-relative text-center container-fluid justify-content-center d-flex flex-column" >
+      
+        <div class=" d-flex align-items-center justify-content-center my-5 position-relative">
+          <div class="position-absolute d-flex justify-content-start">
+
+            <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+      <dotlottie-player src="https://lottie.host/1eb20462-e000-42eb-8c7c-e1aab13ad921/y3gxOA4PsU.lottie" background="transparent" speed="1" style="width: 75%;" loop autoplay id="first-shape"></dotlottie-player>
+      
+          </div>
+          <div class="position-absolute d-flex justify-content-start">
+
+            <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+        <dotlottie-player src="https://lottie.host/5f553c78-9643-47cf-a50b-e7878b616d0f/cQwLr74Ikh.lottie" background="transparent" speed="1" style="width: 100%;" loop autoplay id="second-shape"></dotlottie-player>  
+          
+         </div>
+         
+          <div class="position-absolute d-flex justify-content-end">
+              
+        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+        <dotlottie-player src="https://lottie.host/1eb20462-e000-42eb-8c7c-e1aab13ad921/y3gxOA4PsU.lottie" background="transparent" speed="1" style="width: 40%;" loop autoplay id="third-shape"></dotlottie-player>
+        
+          </div>
+        </div>
+        <div class="container d-flex justify-content-center align-items-center my-5">
+          <div class="apps position-absolute d-flex gap-3 flex-column align-items-center top-0">
+            <div class="row align-items-center g-2 justify-content-center text-center">
+              <h1 class="fw-bold">Lean Anything, Anywhere with</h1>
+              <h1 class="text-primary fw-bold" >Lango</h1>
+            </div>
+            <div class="container d-flex flex-wrap gap-3 align-items-center g-4 justify-content-center text-center">
+              <a href="#" class="apple  d-flex gap-3  justify-content-center align-items-center text-decoration-none text-black bg-white p-2 px-4">
+                <i class="bi bi-apple fs-1"></i>
+                <div class="d-flex flex-column">
+                  <span>Download on the </span>
+                  <span class="fw-bold">App Store</span>
+                </div>
+              </a>
+              <a href="#" class="google  d-flex gap-3  justify-content-center align-items-center text-decoration-none text-black bg-white p-2 px-4">
+                  <i class="bi bi-google-play fs-1"></i>
+                <div class="d-flex flex-column">
+                  <span>Get it on</span>
+                  <span class="fw-bold">Google Play</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      
+    </section>
+    </main>
+    <div class=" container d-flex justify-content-center"style="margin-top:20%;">
+      <footer class="d-flex flex-column flex-wrap mb-5 gap-5 justify-content-center">
+        <div class="d-flex text-start flex-row flex-wrap gap-5">
+          <div class="d-flex flex-column">
+            <p class="fw-bold">Site language: </p>
+            <a href="#" class="text-decoration-none" style="color:#8A8AA3;">
+              <span>English</span>
+            </a>
+            <a href="#" class="text-decoration-none" style="color:#8A8AA3;">
+              <span>Spanish</span>
+            </a>
+            <a href="#" class="text-decoration-none" style="color:#8A8AA3;">
+              <span>French</span>
+            </a>
+            <a href="#" class="text-decoration-none" style="color:#8A8AA3;">
+              <span>German</span>
+            </a>
+  
+          </div>
+          <div class="d-flex flex-column">
+            <p class="fw-bold">Apps</p>
+            <a href="" class="text-decoration-none" style="color:#8A8AA3;">Lango for IOS</a>
+            <a href="" class="text-decoration-none" style="color:#8A8AA3;">Lango for Android</a>
+           </div>
+           <div class="d-flex flex-column">
+            <p class="fw-bold">Support</p>
+            <a href="" class="text-decoration-none" style="color:#8A8AA3;">FAQ</a>
+            <a href="" class="text-decoration-none" style="color:#8A8AA3;">Contact Us</a>
+           </div>
+           <div class="d-flex flex-column">
+            <p class="fw-bold">Social</p>
+            <a href="" class="text-decoration-none" style="color:#8A8AA3;">Blog</a>
+            <a href="" class="text-decoration-none" style="color:#8A8AA3;">Instagram</a>
+            <a href="" class="text-decoration-none" style="color:#8A8AA3;">Tiktok</a>
+            <a href="" class="text-decoration-none" style="color:#8A8AA3;">Twitter</a>
+            <a href="" class="text-decoration-none" style="color:#8A8AA3;">YouTube</a>
+           </div>
+           <div class="d-flex flex-column">
+            <p class="fw-bold"> Privacy and terms</p>
+            <a href="" class="text-decoration-none" style="color:#8A8AA3;">Community guidelines</a>
+            <a href="" class="text-decoration-none" style="color:#8A8AA3;">Terms</a>
+            <a href="" class="text-decoration-none" style="color:#8A8AA3;">Privacy</a>
+           </div>
+        </div>
+        <div class="d-flex flex-column">
+          <p class="fw-bold">© 2023 Lango. All rights reserved.</p>
+        </div>
+        
+      </footer>
+  
+     
+      
+    </div>
+   
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+   
+  </body>
+</html>

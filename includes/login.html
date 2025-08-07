@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Lango</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../assets/css/login.css"/>
+  </head>
+  <body>
+    <main class="d-flex align-items-center justify-content-center" style="min-height: 100vh;">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-5">
+            <div class="card shadow-lg border-0 rounded-4">
+              <div class="card-body p-5">
+                <h2 class="text-center mb-4 fw-bold text-white">Welcome Back!</h2>
+                <p class="text-center mb-4 text-white">Login to continue your language journey</p>
+                
+                <form>
+                  <div class="mb-3">
+                    <label for="email" class="form-label text-white">Email address</label>
+                    <div class="input-group">
+                      <span class="input-group-text text-black bg-white">
+                        <i class="bi bi-envelope"></i>
+                      </span>
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                  </div>
+                  
+                  <div class="mb-3">
+                    <label for="password" class="form-label text-white">Password</label>
+                    <div class="input-group">
+                      <span class="input-group-text text-black bg-white" >
+                        <i class="bi bi-lock"></i>
+                      </span>
+                      <input type="password" class="form-control"  id="password" placeholder="Enter your password">
+                    </div>
+                  </div>
+                  
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="remember" >
+                      <label class="form-check-label text-white" for="remember">Remember me</label>
+                    </div>
+                    <a href="#" class="text-decoration-none" >Forgot password?</a>
+                  </div>
+                  <a href="../includes/learn.html">
+                    <button type="button" class="btn btn-primary w-100 mb-3 d-flex align-items-center justify-content-center p-2 px-4">
+                        <i class="bi bi-box-arrow-in-right me-2"></i>
+                        <span>Login</span>
+                      </button>
+                  </a>
+                  
+                  
+                  <div class="text-center mb-3">
+                    <span class="text-muted">Or continue with</span>
+                  </div>
+                  
+                  <div class="d-flex gap-2 mb-3">
+                    <button type="button" class="btn btn-outline-secondary flex-grow-1 p-2 " >
+                      <i class="bi bi-google"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary flex-grow-1 p-2 " >
+                      <i class="bi bi-facebook"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary flex-grow-1 p-2 " >
+                      <i class="bi bi-apple"></i>
+                    </button>
+                  </div>
+                  
+                  <div class="text-center">
+                    <span class="">Don't have an account?</span>
+                    <a href="../includes/signup.html" class="text-decoration-none ms-1" >Sign up</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

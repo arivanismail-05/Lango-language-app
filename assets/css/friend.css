@@ -1,0 +1,274 @@
+.friend-content {
+    padding: 24px;
+    height: calc(100vh - 64px);
+    overflow-y: auto;
+}
+
+.friend-header {
+    margin-bottom: 32px;
+    background: var(--bg-card);
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--card-border);
+}
+
+.friend-header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-tertiary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.friend-header p {
+    color: var(--text-secondary);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.friend-nav {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    padding: 8px;
+    background: var(--bg-card);
+    border-radius: 12px;
+    border: 1px solid var(--card-border);
+}
+
+.friend-nav-item {
+    list-style: none;
+}
+
+.friend-nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.friend-nav-link:hover {
+    background: var(--bg-hover);
+    color: var(--accent-primary);
+}
+
+.friend-nav-link.active {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-tertiary));
+    color: var(--text-primary);
+}
+
+.friend-nav-link i {
+    font-size: 20px;
+}
+
+.friend-filters {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.friend-filter-select {
+    padding: 10px 32px 10px 16px;
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    background: var(--bg-card);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%238A8AA3' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+}
+
+.friend-filter-select:hover {
+    border-color: var(--accent-primary);
+}
+
+.friend-filter-select option {
+    background: var(--bg-card);
+    color: var(--text-secondary);
+}
+
+.friends-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px 0;
+}
+
+.friend-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 16px;
+    transition: all 0.2s ease;
+}
+
+.friend-item:hover {
+    background: var(--bg-hover);
+    transform: translateX(4px);
+}
+
+.friend-main {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+}
+
+.friend-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent-primary);
+}
+
+.friend-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.friend-name {
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 16px;
+}
+
+.friend-status {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.friend-languages {
+    display: flex;
+    gap: 12px;
+    font-size: 13px;
+}
+
+.friend-languages .native {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.friend-languages .learning {
+    color: var(--text-secondary);
+}
+
+.friend-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.friend-action-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 16px;
+}
+
+.friend-action-button.primary {
+    background: var(--accent-primary);
+    color: white;
+}
+
+.friend-action-button.primary:hover {
+    background: var(--accent-tertiary);
+    transform: scale(1.1);
+}
+
+.friend-action-button.secondary {
+    background: var(--bg-hover);
+    color: var(--text-secondary);
+}
+
+.friend-action-button.secondary:hover {
+    background: var(--bg-hover);
+    color: var(--accent-primary);
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .friend-item {
+        padding: 12px;
+    }
+
+    .friend-avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .friend-name {
+        font-size: 14px;
+    }
+
+    .friend-languages {
+        font-size: 12px;
+    }
+
+    .friend-action-button {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+}
+
+.community-nav {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    padding: 8px;
+    background: var(--bg-card);
+    border-radius: 12px;
+    border: 1px solid var(--card-border);
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background: var(--bg-hover);
+    color: var(--accent-primary);
+}
+
+.nav-link.active {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-tertiary));
+    color: var(--text-primary);
+}
+
+.nav-link i {
+    font-size: 20px;
+}

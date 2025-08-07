@@ -1,0 +1,90 @@
+/* Card and Container Styles */
+.card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--card-border);
+    box-shadow: var(--card-shadow);
+}
+
+.card-body {
+    color: var(--text-primary);
+}
+
+/* Text Styles */
+.card h2,
+.card .form-label,
+.card .form-check-label {
+    color: var(--text-primary);
+}
+
+.card .text-muted {
+    color: var(--text-secondary) !important;
+}
+
+.form-control {
+    background-color: var(--bg-hover);
+    color: var(--text-primary);
+}
+
+.form-control:focus {
+    background-color: var(--bg-hover);
+    color: var(--text-primary);
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    color: var(--text-secondary);
+}
+
+/* Button Styles */
+.btn-primary {
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-tertiary));
+    border: none;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, var(--accent-tertiary), var(--accent-primary));
+    color: var(--text-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Social Login Buttons */
+.btn-outline-secondary {
+    background-color: var(--bg-hover);
+    border: 1px solid var(--card-border);
+    color: var(--text-primary);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--accent-primary);
+    border-color: var(--accent-primary);
+    color: var(--text-primary);
+}
+
+/* Form Check Styles */
+.form-check-input {
+    background-color: var(--bg-hover);
+    border-color: var(--card-border);
+}
+
+.form-check-input:checked {
+    background-color: var(--accent-primary);
+    border-color: var(--accent-primary);
+}
+
+/* Link Styles */
+.card a {
+    color: var(--accent-primary);
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: var(--accent-tertiary);
+}
+
+/* Span Text Color */
+.card span:not(.text-muted) {
+    color: var(--text-primary);
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course - Lango</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../assets/css/learn.css">
+    <link rel="stylesheet" href="../assets/css/course.css">
+</head>
+<body>
+    <div class="learn-container">
+        <!-- Left Navigation - Hidden on Mobile, Icons only on Tablet -->
+        <nav class="left-nav d-none d-md-block">
+            <div class="nav-header">
+                <img src="../img/logo/logo.png" alt="Lango" class="logo" width="40" height="40">
+                <span class="d-none d-lg-inline">Lango</span>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="../includes/learn.html">
+                        <i class="bi bi-book"></i>
+                        <span class="d-none d-lg-inline">Learn</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../includes/community.html">
+                        <i class="bi bi-people"></i>
+                        <span class="d-none d-lg-inline">Community</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="../includes/course.html">
+                        <i class="bi bi-mortarboard"></i>
+                        <span class="d-none d-lg-inline">Course</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../includes/profile.html">
+                        <i class="bi bi-person"></i>
+                        <span class="d-none d-lg-inline">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-three-dots"></i>
+                        <span class="d-none d-lg-inline">More</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Top Navigation -->
+            <nav class="top-nav">
+                <div class="left-section">
+                    <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#levelModal">
+                        <i class="bi bi-trophy"></i>
+                        <span>Beginner</span>
+                    </button>
+                </div>
+                <div class="right-section">
+                    <div class="streak">
+                        <i class="bi bi-fire"></i>
+                        <span>5</span>
+                    </div>
+                    <div class="language-flag">
+                        <img src="../img/flags/spain.png" alt="Spanish" width="24" height="24">
+                    </div>
+                    <div class="notifications">
+                        <i class="bi bi-bell"></i>
+                        <span class="notification-badge">2</span>
+                    </div>
+                    <div class="hearts">
+                        <i class="bi bi-heart-fill"></i>
+                        <span>5</span>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Course Content -->
+            <div class="course-content">
+                <!-- In Progress Section -->
+                <div class="course-section">
+                    <div class="section-header">
+                        <h2 class="section-title">
+                            <i class="bi bi-flag-fill"></i>
+                            Spanish courses
+                        </h2>
+                    </div>
+                    <div class="course-grid">
+                        <div class="course-card">
+                            <img src="https://vidalingua.com/images/spanish-courses" alt="Complete Spanish" class="course-image">
+                            <div class="course-info">
+                                <div class="course-level">
+                                    <i class="bi bi-trophy"></i>
+                                    Level A1 - C2
+                                </div>
+                                <div class="course-status in-progress">
+                                    <i class="bi bi-play-circle"></i>
+                                    In Progress
+                                </div>
+                                <h3 class="course-name">Complete Spanish</h3>
+                                <p class="course-description">Master Spanish from basics to fluency with our comprehensive course.</p>
+                                <div class="course-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 45%"></div>
+                                    </div>
+                                    <span class="progress-text">45%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Courses Section -->
+                <div class="course-section">
+                    <div class="section-header">
+                        <h2 class="section-title">More courses</h2>
+                    </div>
+                    <div class="course-grid">
+                        <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1499591934245-40b55745b905?w=800&auto=format&fit=crop&q=80" alt="Spanish for Travel" class="course-image">
+                            <div class="course-info">
+                                <div class="course-level">
+                                    <i class="bi bi-trophy"></i>
+                                    Level A2
+                                </div>
+                                <h3 class="course-name">Spanish for Travel</h3>
+                                <p class="course-description">Essential Spanish phrases and cultural tips for travelers.</p>
+                                <div class="course-actions">
+                                    <button class="course-btn primary">Start Learning</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-card">
+                            <img src="https://imagenes.elpais.com/resizer/v2/S2TEFDHLEJER5I72V22CLKLJYQ.jpg?auth=f73510a601a5247c36dd75156907b29788bf5ace10ca50135dcf218a0d658434&width=414" alt="Learn Spanish with El País" class="course-image">
+                            <div class="course-info">
+                                <div class="course-level">
+                                    <i class="bi bi-trophy"></i>
+                                    Level B2 - C1
+                                </div>
+                                <h3 class="course-name">Learn Spanish with El País</h3>
+                                <p class="course-description">Improve your Spanish with authentic news articles and media.</p>
+                                <div class="course-actions">
+                                    <button class="course-btn primary">Start Learning</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-card">
+                            <img src="https://i.ytimg.com/vi/1gKSAhY4lUQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDxRU0dZ9X9Ik9VAdTJ6NU3PN3wqQ" alt="All about Spanish" class="course-image">
+                            <div class="course-info">
+                                <div class="course-level">
+                                    <i class="bi bi-trophy"></i>
+                                    Level B2
+                                </div>
+                                <h3 class="course-name">All about Spanish</h3>
+                                <p class="course-description">Deep dive into Spanish culture and language through podcasts.</p>
+                                <div class="course-actions">
+                                    <button class="course-btn primary">Start Learning</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-card">
+                            <img src="https://www.shutterstock.com/image-photo/group-curious-preteen-learners-young-600nw-2323742405.jpg" alt="Complete Latin American Spanish" class="course-image">
+                            <div class="course-info">
+                                <div class="course-level">
+                                    <i class="bi bi-trophy"></i>
+                                    Level A1 - C2
+                                </div>
+                                <h3 class="course-name">Complete Latin American Spanish</h3>
+                                <p class="course-description">Learn Spanish variants from across Latin America.</p>
+                                <div class="course-actions">
+                                    <button class="course-btn primary">Start Learning</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-card">
+                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&auto=format&fit=crop&q=80" alt="Advanced Spanish Exam Preparation" class="course-image">
+                            <div class="course-info">
+                                <div class="course-level">
+                                    <i class="bi bi-trophy"></i>
+                                    Level C1
+                                </div>
+                                <h3 class="course-name">Advanced Spanish Exam Preparation</h3>
+                                <p class="course-description">Comprehensive preparation for DELE and SIELE exams.</p>
+                                <div class="course-actions">
+                                    <button class="course-btn primary">Start Learning</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation - Visible only on Mobile -->
+        <nav class="bottom-nav d-lg-none">
+            <ul class="nav-links">
+                <li>
+                    <a href="#">
+                        <i class="bi bi-book"></i>
+                        <span>Learn</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-people"></i>
+                        <span>Community</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <i class="bi bi-mortarboard"></i>
+                        <span>Course</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-person"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-three-dots"></i>
+                        <span>More</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Level Modal -->
+    <div class="modal fade" id="levelModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Select Your Level</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="level-options">
+                        <button class="level-btn active">
+                            <i class="bi bi-trophy"></i>
+                            <span>Beginner</span>
+                        </button>
+                        <button class="level-btn">
+                            <i class="bi bi-trophy-fill"></i>
+                            <span>Intermediate</span>
+                        </button>
+                        <button class="level-btn">
+                            <i class="bi bi-award"></i>
+                            <span>Advanced</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
