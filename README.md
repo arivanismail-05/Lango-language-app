@@ -56,10 +56,6 @@ Lango-language-app/
 
 This is a personal learning project. Contributions are welcome! If you have suggestions, feel free to fork the repo and submit a pull request.
 
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ---
 
 Made with ❤️ by [Arivan Ismail](https://github.com/arivanismail-05)
